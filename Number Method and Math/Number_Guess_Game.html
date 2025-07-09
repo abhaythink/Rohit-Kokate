@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="Prompt()"> Guess the number</button>
+    <script>
+        function Prompt(message) {
+            let inputNumber=prompt("Enter a number");
+            let random=(Math.random())*100;
+            if(inputNumber > random) {
+                alert(`The number is greater than the random number ${random}`);
+            } else if(inputNumber < random) {
+                alert(`The number is less than the random number ${random}`);
+            } else {
+                alert(`The number is equal to the random number${random}`);
+            }
+        }
+        
+    </script>
+</body>
+</html>

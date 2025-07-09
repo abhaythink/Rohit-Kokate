@@ -19,7 +19,11 @@ console.log(num1.toLocaleString()); //it will return the number in local format
 
 //-------------------------------------- Math Methods ---------------------
 
+console.log("Math Methods");
 
+let arr= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,12];
+console.log("MAX Number:",Math.max(...arr)); //it will return the maximum value from array
+console.log("MIN Number:",Math.min(...arr)); //it will return the minimum value from array
 console.log(Math.abs(-10)); //it will return the absolute value of number
 
 console.log(Math.ceil(10.5)); //it will return the next integer value of number
@@ -28,7 +32,6 @@ console.log(Math.round(10.4)); //it will return the nearest integer value of num
 console.log(Math.trunc(10.5)); //it will return the integer value of number by removing the decimal part
 console.log(Math.PI.toFixed(2)); //it will return the value of PI in 2 decimal places
 console.log(Math.sqrt(16)); //it will return the square root of number
-
 
 
 
