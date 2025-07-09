@@ -86,3 +86,57 @@ function scope(){
 // console.log(str3);
 
 console.log(scope());
+
+
+//------------------------------------------- Data Types and Typeof
+console.log(" \n \nNumber Data Type Practice");
+let value=20;               //Number
+let val=20.0;
+console.log("Number value is",value);
+console.log("Type is",typeof(value)," \nSecound variable is",typeof(val));
+
+
+console.log("\nUndefined Data Type  Practice");
+let undef;
+console.log(undef);
+console.log(typeof(undef));
+
+
+console.log("\n Null Data Type Practice");
+let val2=null;
+console.log(val2);
+console.log(typeof(val2));
+
+console.log("\n NAN Data type practice");
+let val3=NaN;
+console.log(val3);
+console.log(typeof val3); 
+
+console.log("\n String Data Type Practice");
+let str4="Hello";
+console.log(str4);
+console.log(typeof str4);
+
+console.log("\n Boolean Data Type Practice");
+let Bool=true;
+console.log(Bool);
+console.log(!Bool);
+console.log(typeof Bool);
+
+
+console.log("\n object Data Type Practice \n");
+
+let val4={
+    name:"ROhit Kokate",
+    address:{
+        post:"Somthane",
+        taluka:"Sinner",
+        dist:"Nashik"
+    },
+    age:20,
+}
+console.log(val4);
+console.log(val4.address);
+console.log("Type is",typeof val4);
+
+
