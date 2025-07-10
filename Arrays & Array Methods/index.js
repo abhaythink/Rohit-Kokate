@@ -10,6 +10,8 @@ console.log(arr.pop(),"--after remove the last elemnt ",arr);
 console.log(arr.slice(2,5));
 console.log(arr.splice(2,3),"after remove 3 elemnt from index 2",arr); 
 
+
+
 console.log(arr.reverse());
 
 console.log(arr.sort());
@@ -24,7 +26,7 @@ function myfun(total,l) {
 }
 console.log("even numbers are ",ev);
 let sum=ev.reduce(myfun); 
-//Reduce will take 3 parameter first is total and second is current element and third id initial value
+//Reduce will take 3 parameter first is total and second is current element and third id initial value and return one value as a result
 console.log("sum of all element in array is ",sum);
 console.log("for each loop");
 arr.forEach((element,index)=>{
@@ -32,8 +34,8 @@ arr.forEach((element,index)=>{
     
 });
 
-
-// in map we wil pass parmeter as element and index when we want to modify each element of array
+//filter method will filter the array and return new array with condition
+// map will change all relemnt in a array and return new array
 
 let val=[1,2,3,4,5,6,7,8,9];
 let val1=val.map((element,index)=>{
