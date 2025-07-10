@@ -41,9 +41,17 @@ console.log(capital(str4));
 
 
 //-----------count frequency of words in string----------------
-function freq(str) {
-    return str.split(" ")
+function countFrequency(str) {
+    let words = str.split(" ");
+    let frequency = {};
+    
+    words.forEach(word => {
+        word = word.toLowerCase(); 
+        frequency[word] = (frequency[word] || 0) + 1;
+    });
+    
+    return frequency;
 }
-let fre=freq(str4);
-console.log(fre.length);
  
+let str5 = "Hello world hello from Thinkitive Thinkitive";
+console.log(countFrequency(str5));
