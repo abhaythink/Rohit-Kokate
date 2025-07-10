@@ -13,7 +13,7 @@ console.log(str.substring(0,6));
 
 console.log(str.slice(0,5));
 
-// this method is not remove hr space in betwen he string
+// this 3 method is not remove white space in betwen he string
 let str1="     Hello, World!     q";
 console.log(str1.trim()); //remove white space from string
 console.log(str1.trimStart());
@@ -27,3 +27,23 @@ console.log(str3.padEnd(2,"0"));
 
 console.log(str1.replace("l","o"));
 console.log(str1.replaceAll("l","o"));
+
+//-----------capitalize first letter of each word ----------------
+
+function capital(str) {
+    return str.split(" ").map(word => {
+        return word.charAt(0).toUpperCase() + word.slice(1)
+    }).join(" ");
+}
+
+let str4 = "hello world from Thinkitive";
+console.log(capital(str4));
+
+
+//-----------count frequency of words in string----------------
+function freq(str) {
+    return str.split(" ")
+}
+let fre=freq(str4);
+console.log(fre.length);
+ 
