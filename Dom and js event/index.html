@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<!-- <div id="container">
+    <h1 class="para">Welcome to DOM and JS event</h1>
+    <p id="fpara" class="para">Hello how are you</p>
+</div> -->
+<!-- <script src="index.js"></script> -->
+ <!-- for Accessing the dom we have diffrent method. document is root node of the html .all the code in the file is combine in the document diffrent method like getElementById() ,getElementByTagName,getElementByClassName,getElementByName -->
+  <!-- we can update the element using .innerHTML :- which is use to get and set the html element,  .outerHTML ,  .textContent:print the text with enter and space in the element ,  .innerText: Print the text inside the element -->
+   <h1>To Do List Game</h1>
+   <input type="text" id="input" placeholder="Enter your task here">
+    <button id="addBtn">Add Task</button>
+    <ul id="taskList"></ul>
+    <script>
+        const input = document.getElementById('input');
+        const addBtn = document.getElementById('addBtn');
+        const taskList = document.getElementById('taskList');
+
+        addBtn.addEventListener('click', function() {
+            const taskText = input.value.trim();
+            if (taskText) {
+                const li = document.createElement('li');
+                li.textContent = taskText;
+                taskList.appendChild(li);
+                input.value = '';
+            }
+        });
+        </script>
+</body>
+</html>
