@@ -15,43 +15,28 @@ console.log(arr.reverse());
 console.log(arr.sort());
 
 
-//---------Filter even numbers and calculate total using reduce()--------
+
+// even numbers and calculate total using reduce
 let arr1=[1,2,3,4,5,6,7,8,9];
-
-function even(arr) {
-    let evenArr=[];
-    console.log("for in loop");
-    
-    for(let i in arr){
-        if(arr[i]%2==0){
-            console.log(arr[i]);
-            evenArr.push(arr[i]);
-        }
-    }
-    console.log("for of loop");
-    
-    for(let i of arr){
-        if(i%2==0){
-            console.log(i);
-        }
-    }
-    return evenArr;
-}
-let ev=even(arr1);
-
+let ev=arr1.filter(e=>e%2==0);
 function myfun(total,l) {
     return total+l;
 }
-let sum=ev.reduce(myfun);
+console.log("even numbers are ",ev);
+let sum=ev.reduce(myfun); 
+//Reduce will take 3 parameter first is total and second is current element and third id initial value
 console.log("sum of all element in array is ",sum);
-
-
-
 console.log("for each loop");
 arr.forEach((element,index)=>{
     console.log("element is ",element,"index is ",index);
     
 });
 
-//----find
-// console.log(arr.find("1"));
+
+// in map we wil pass parmeter as element and index when we want to modify each element of array
+
+let val=[1,2,3,4,5,6,7,8,9];
+let val1=val.map((element,index)=>{
+    return element*2;
+});
+console.log(val1);
