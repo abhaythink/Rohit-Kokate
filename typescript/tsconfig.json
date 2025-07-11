@@ -1,0 +1,11 @@
+{
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "build"
+  ],
+  "compilerOptions": {
+    "outDir": "./build"
+  }
+}
